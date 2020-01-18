@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.get("*", (req, res) =>
+app.all("*", (req, res) =>
   res.send({
     url: req.url,
     path: req.path,
