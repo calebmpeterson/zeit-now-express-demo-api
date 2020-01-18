@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "excelerant-demo-api",
+  "builds": [{ "src": "/src/index.js", "use": "@now/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/src/index.js" }]
+}
