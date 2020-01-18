@@ -11,7 +11,8 @@ app.use(bodyParser.json());
 
 app.get("*", (req, res) =>
   res.send({
-    path: req.url,
+    url: req.url,
+    path: req.path,
     params: req.params,
     query: req.query,
     body: req.body
